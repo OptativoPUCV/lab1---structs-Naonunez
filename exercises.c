@@ -46,7 +46,7 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   int j=0;
-  int *total=(int *)malloc(*newSize);
+  int *total=(int *)malloc(*newSize * sizeof(int));
 
   
   for(int i=0;i<size;i++){
