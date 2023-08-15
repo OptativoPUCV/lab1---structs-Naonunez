@@ -60,3 +60,17 @@ exercises.c:58:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 ebadbe1
+Tue 15 Aug 2023 10:06:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:58:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   58 |   return *pares;
+      |          ^~~~~~
+exercises.c:59:1: error: control reaches end of non-void function [-Werror=return-type]
+   59 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5fb54da
