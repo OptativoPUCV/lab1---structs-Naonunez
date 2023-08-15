@@ -52,7 +52,13 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
   
+  
   int *total=(int *)malloc(pares * sizeof(int));
+  if (total == NULL) {
+        *newSize = 0;
+        return NULL;
+  }
+  
   for(int i=0;i<size;i++){
     if (arr[i] % 2==0){
       total[j]=arr[i];
