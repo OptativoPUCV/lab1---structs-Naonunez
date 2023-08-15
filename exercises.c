@@ -51,11 +51,12 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       pares++;
     }
   }
+  printf("%i ",pares);
 
   
   
   
-  return *pares; 
+  return NULL; 
 }
 
 /*
