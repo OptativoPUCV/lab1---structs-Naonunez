@@ -74,17 +74,17 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
-  int size3;
+  int size3, cont=0;
   size3=size1+size2;
-  for (int i=0;i<size3;i++){
-    for(int j=0;j<size1;j++){
-      result[i]=arr1[j];
+  for (int i=0;i<size1;i++){
+    result[i]=arr1[i];
+    if (i==size1-1){
+      for(int j=size1;j<size3;j++){
+        result[j]=arr2[cont];
+        cont++;
+      }
     }
-    /*
-    for(int z=0;z<size2;z++){
-      result[i]=arr2[z];
-    }
-  }*/
+  }
   
   for (int i=0;i < size3-1;i++){
     for(int j=0;j<size3-i-1;j++){
