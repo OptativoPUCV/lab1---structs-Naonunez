@@ -116,11 +116,11 @@ int checkSorted(int arr[], int size) {
       contDes++;
     }
 
-    if (contAsc==size){
+    if (contAsc==size-1){
       return 1;
     }
     
-    if(contDes==size){
+    if(contDes==size-1){
       return -1;
     }
     
