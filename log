@@ -161,3 +161,9 @@ exercises.c:89:15: error: ‘size’ undeclared (first use in this function); di
       |               size3
 Compilation failed
 337b125
+Thu 17 Aug 2023 08:32:31 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+eec95c9
