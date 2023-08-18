@@ -276,3 +276,21 @@ Thu 17 Aug 2023 11:33:41 PM UTC:
  tests:  0|1
 total_score: 60/70
 e903a73
+Fri 18 Aug 2023 12:08:44 AM UTC: 
+ exercises.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:10: error: ‘siguiente’ undeclared (first use in this function)
+  195 |   return siguiente; }
+      |          ^~~~~~~~~
+exercises.c:195:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:178:9: error: variable ‘Inicio’ set but not used [-Werror=unused-but-set-variable]
+  178 |   Nodo *Inicio=NULL;
+      |         ^~~~~~
+exercises.c:195:21: error: control reaches end of non-void function [-Werror=return-type]
+  195 |   return siguiente; }
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+a419cd1
